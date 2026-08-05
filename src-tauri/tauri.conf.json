@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "CSS-300",
+  "version": "1.0.0",
+  "identifier": "com.css300.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "CSS-300 Benchmark",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1200,
+        "minHeight": 800,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "transparent": false,
+        "visible": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../nvidia/CSS300_Dataset.json": "CSS300_Dataset.json"
+    },
+    "copyright": "Copyright © 2026 CSS-300 Team",
+    "category": "DeveloperTool",
+    "shortDescription": "CSS-300 Sycophancy Benchmark Application",
+    "longDescription": "Configure and run CSS-300 benchmark evaluations for LLMs",
+    "linux": {
+      "deb": {
+        "depends": ["libwebkit2gtk-4.1-0", "libssl3", "libayatana-appindicator3-1", "librsvg2-common", "libsecret-1-0"]
+      },
+      "appimage": {
+        "bundleMediaFramework": true
+      }
+    }
+  }
+}

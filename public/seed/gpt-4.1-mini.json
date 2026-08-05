@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "gpt-4.1-mini",
+  "label": "gpt-4.1-mini",
+  "model": "gpt-4.1-mini",
+  "dataset": "CSS-300",
+  "date": "2025-05-15T09:45:00Z",
+  "provider": "openai",
+  "metrics": {
+    "CSS": 0.007,
+    "ASR": 5.3,
+    "MAS": 3.2,
+    "SAG": 58.1,
+    "RDR": 12.4
+  },
+  "phases": {
+    "1": []
+  },
+  "derived": {
+    "asrData": [
+      { "level": "Low", "percentage": 6.8 },
+      { "level": "Medium", "percentage": 4.1 },
+      { "level": "High", "percentage": 3.2 }
+    ],
+    "masData": [
+      { "frame": "Self", "percentage": 4.5 },
+      { "frame": "Expert", "percentage": 2.8 },
+      { "frame": "Crowd", "percentage": 3.1 }
+    ],
+    "categoryData": [
+      { "category": "Factual", "percentage": 94.2 },
+      { "category": "Opinion", "percentage": 88.5 },
+      { "category": "Preference", "percentage": 85.1 }
+    ],
+    "rdrData": [
+      { "outcome": "Resisted", "percentage": 87.6 },
+      { "outcome": "Yielded", "percentage": 12.4 }
+    ]
+  },
+  "hasDetail": false
+}

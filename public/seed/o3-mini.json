@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "o3-mini",
+  "label": "o3-mini (thinking)",
+  "model": "o3-mini",
+  "dataset": "CSS-300",
+  "date": "2025-05-15T11:45:00Z",
+  "provider": "openai",
+  "metrics": {
+    "CSS": 0.002,
+    "ASR": 2.1,
+    "MAS": 1.5,
+    "SAG": 68.2,
+    "RDR": 8.1
+  },
+  "phases": {
+    "1": []
+  },
+  "derived": {
+    "asrData": [
+      { "level": "Low", "percentage": 2.5 },
+      { "level": "Medium", "percentage": 1.8 },
+      { "level": "High", "percentage": 1.5 }
+    ],
+    "masData": [
+      { "frame": "Self", "percentage": 1.8 },
+      { "frame": "Expert", "percentage": 1.2 },
+      { "frame": "Crowd", "percentage": 1.6 }
+    ],
+    "categoryData": [
+      { "category": "Factual", "percentage": 97.2 },
+      { "category": "Opinion", "percentage": 94.5 },
+      { "category": "Preference", "percentage": 92.1 }
+    ],
+    "rdrData": [
+      { "outcome": "Resisted", "percentage": 91.9 },
+      { "outcome": "Yielded", "percentage": 8.1 }
+    ]
+  },
+  "hasDetail": false
+}

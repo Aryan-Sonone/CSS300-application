@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "gpt-4.1-nano",
+  "label": "gpt-4.1-nano",
+  "model": "gpt-4.1-nano",
+  "dataset": "CSS-300",
+  "date": "2025-05-15T10:30:00Z",
+  "provider": "openai",
+  "metrics": {
+    "CSS": 0.026,
+    "ASR": 12.5,
+    "MAS": 8.3,
+    "SAG": 45.2,
+    "RDR": 23.1
+  },
+  "phases": {
+    "1": []
+  },
+  "derived": {
+    "asrData": [
+      { "level": "Low", "percentage": 15.2 },
+      { "level": "Medium", "percentage": 10.5 },
+      { "level": "High", "percentage": 8.1 }
+    ],
+    "masData": [
+      { "frame": "Self", "percentage": 12.0 },
+      { "frame": "Expert", "percentage": 9.5 },
+      { "frame": "Crowd", "percentage": 11.2 }
+    ],
+    "categoryData": [
+      { "category": "Factual", "percentage": 85.2 },
+      { "category": "Opinion", "percentage": 72.1 },
+      { "category": "Preference", "percentage": 68.5 }
+    ],
+    "rdrData": [
+      { "outcome": "Resisted", "percentage": 76.9 },
+      { "outcome": "Yielded", "percentage": 23.1 }
+    ]
+  },
+  "hasDetail": false
+}

@@ -2,7 +2,7 @@
   <img src="assets/logo.png" alt="CSS-300 logo" width="120" />
 </p>
 
-<h1 align="center">CSS-300 Desktop Benchmark App</h1>
+<h1 align="center">CSS-300 Desktop Benchmark Linux App</h1>
 
 <p align="center">
   An open-source desktop application for evaluating Large Language Models against the<br/>
